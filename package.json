@@ -13,7 +13,7 @@
     "ios/Plugin/",
     "TruPluginIonicCapacitor.podspec"
   ],
-  "author": "tru.ID <community@tru.id> (https://github.com/tru-ID)",
+  "author": "tru.ID <community@tru.id> (https://github.com/tru-ID)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
-    "@capacitor/core": "^3.0.0",
+    "@capacitor/core": "^3.1.2",
     "@capacitor/docgen": "^0.0.10",
     "@capacitor/ios": "^3.0.0",
     "@ionic/eslint-config": "^0.3.0",
