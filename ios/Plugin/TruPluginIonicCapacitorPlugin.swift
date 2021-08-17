@@ -66,7 +66,7 @@ public class TruPluginIonicCapacitorPlugin: CAPPlugin {
        
     }
 
-    @objc func checkWithTrace(_ call: CAPPluginCall) {
+    @objc func isReachable(_ call: CAPPluginCall) {
 
       let truSdk: TruSDK = TruSDK()
       truSdk.isReachable{ result in
@@ -82,7 +82,7 @@ public class TruPluginIonicCapacitorPlugin: CAPPlugin {
                     call.reject("Unable to decode reachability details to json")
                 }
             case .failure(let error):
-                call.reject(error.localizedDescription, nill, error)
+                call.reject(error.localizedDescription, nil, error)
             }
         }
     }
