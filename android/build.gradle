@@ -43,11 +43,10 @@ android {
 
 repositories {
     google()
-    jcenter()
     mavenCentral()
-     maven {
-    url "https://gitlab.com/api/v4/projects/22035475/packages/maven"
-  }
+    maven {
+        url "https://gitlab.com/api/v4/projects/22035475/packages/maven"
+    }
 }
 
 
