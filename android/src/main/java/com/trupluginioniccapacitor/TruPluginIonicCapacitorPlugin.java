@@ -29,9 +29,15 @@ public class TruPluginIonicCapacitorPlugin extends Plugin {
             try {
             val truSdk = TruSDK.getInstance();
             val isOnCellular = truSdk.openCheckUrl(url);
-            call.resolve(url); 
+
+            JSObject ret = new JSObject();
+
+            ret.put("result", url);
+
+            call.resolve(ret); 
+
           } catch (Exception exception) {
-            call.reject(exception);
+            call.reject(exception.getLocalizedMessage(), null, exception);
           }
         });
         // start thread 
@@ -50,10 +56,15 @@ public class TruPluginIonicCapacitorPlugin extends Plugin {
             try {
                 val truSdk = TruSDK.getInstance();
                 val traceInfo = truSdk.checkWithTrace(URL(url));
-                call.resolve(traceInfo.trace);
+
+                JSObject ret = new JSObject();
+
+                ret.put("result", traceInfo.trace);
+
+                call.resolve(ret);
 
             } catch(Exception exception){
-                call.reject(exception);
+                call.reject(exception.getLocalizedMessage(), null, exception);
             } 
         });
 
@@ -63,7 +74,7 @@ public class TruPluginIonicCapacitorPlugin extends Plugin {
         // wait for thread to finish executing 
         thread.join();
         }catch (InterruptedException e){
-        call.reject(e);
+         call.reject(e.getLocalizedMessage(), null, exception);
         }
     }
 
@@ -73,10 +84,16 @@ public class TruPluginIonicCapacitorPlugin extends Plugin {
            
             val truSdk = TruSDK.getInstance();
             ReachabilityDetails reachabilityInfo = truSdk.isReachable();
+
+            JSObject ret = new JSObject();
+            
             val payload = reachabilityInfo.toJsonString();
-            call.resolve(payload);
+
+            ret.put("result", payload);
+
+            call.resolve(ret);
           }catch (Exception exception) {
-            call.reject(exception);
+            call.reject(exception.getLocalizedMessage(), null, exception);
           }
     }
     
