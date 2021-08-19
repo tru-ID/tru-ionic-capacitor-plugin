@@ -18,9 +18,9 @@ import java.net.URL
 class TruPluginIonicCapacitorPlugin : Plugin() {
     private val implementation = TruPluginIonicCapacitor()
     private val TAG = TruPluginIonicCapacitorPlugin::class.qualifiedName
-init {
-   TruSDK.initializeSdk(context)
-}
+ public override fun load() {
+        TruSDK.initializeSdk(context)
+    }
     @PluginMethod
      fun check(call: PluginCall){
         val url = call.getString("url");
