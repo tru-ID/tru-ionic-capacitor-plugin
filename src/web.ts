@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { TruPluginIonicCapacitorPlugin } from './definitions';
+import type { Result, TruPluginIonicCapacitorPlugin } from './definitions';
 
 export class TruPluginIonicCapacitorWeb
   extends WebPlugin
@@ -9,13 +9,15 @@ export class TruPluginIonicCapacitorWeb
     console.log('ECHO', options);
     return options;
   }
-  async check(url: string): Promise<string> {
-    return url;
+  async check(url: string): Promise<Result> {
+    console.log(url);
+    return { result: '' };
   }
-  async checkWithTrace(url: string): Promise<string> {
-    return url;
+  async checkWithTrace(url: string): Promise<Result> {
+    console.log(url);
+    return { result: '' };
   }
-  async isReachable(): Promise<string> {
-    return '';
+  async isReachable(): Promise<Result> {
+    return { result: '' };
   }
 }
