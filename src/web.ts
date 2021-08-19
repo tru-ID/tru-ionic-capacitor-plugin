@@ -13,7 +13,7 @@ export class TruPluginIonicCapacitorWeb
     return url;
   }
   async checkWithTrace(url: string): Promise<string> {
-    return '';
+    return url;
   }
   async isReachable(): Promise<string> {
     return '';
