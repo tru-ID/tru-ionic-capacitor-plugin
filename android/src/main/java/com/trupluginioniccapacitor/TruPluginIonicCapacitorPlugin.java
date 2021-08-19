@@ -16,8 +16,13 @@ import android.util.Log;
 
 @CapacitorPlugin(name = "TruPluginIonicCapacitor")
 public class TruPluginIonicCapacitorPlugin extends Plugin {
-
+  
     private TruPluginIonicCapacitor implementation = new TruPluginIonicCapacitor();
+
+    @Override
+    public void load(){
+        TruSDK.initializeSdk(getActivity().getApplicationContext())
+    }
 
    
 
