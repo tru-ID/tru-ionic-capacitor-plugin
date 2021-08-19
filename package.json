@@ -1,6 +1,6 @@
 {
-  "name": "glamboytest",
-  "version": "0.0.4",
+  "name": "tru-ionic-capacitor-plugin",
+  "version": "0.0.1",
   "description": "tru.ID plugin that exposes methods for working with the tru.ID product API",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -13,7 +13,7 @@
     "ios/Plugin/",
     "TruPluginIonicCapacitor.podspec"
   ],
-  "author": "glamboyosa",
+  "author": "tru.ID <community@tru.id> (https://github.com/tru-ID)",
   "license": "MIT",
   "repository": {
     "type": "git",
