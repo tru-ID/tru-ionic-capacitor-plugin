@@ -1,7 +1,7 @@
 {
-  "name": "tru-plugin-ionic-capacitor",
-  "version": "0.1.4",
-  "description": "tru.ID plugin that exposes methods for working with the tru.ID product API",
+  "name": "@tru_id/tru-plugin-ionic-capacitor",
+  "version": "0.1.8",
+  "description": "tru.ID Ionic & Capacitor plugin that enables an HTTP request to be made pver cellular even when on WiFi.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,6 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
+    "ios/Podfile",
     "TruPluginIonicCapacitor.podspec"
   ],
   "author": "tru.ID <community@tru.id> (https://github.com/tru-ID)",
