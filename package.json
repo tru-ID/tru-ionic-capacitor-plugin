@@ -1,6 +1,6 @@
 {
-  "name": "tru-ionic-capacitor-plugin",
-  "version": "0.0.1",
+  "name": "tru-plugin-ionic-capacitor",
+  "version": "0.1.4",
   "description": "tru.ID plugin that exposes methods for working with the tru.ID product API",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

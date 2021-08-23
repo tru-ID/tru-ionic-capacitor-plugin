@@ -60,7 +60,7 @@ public class TruPluginIonicCapacitorPlugin: CAPPlugin {
             }
 
             call.resolve([
-                result: trace.trace
+                "result": trace.trace
             ])
         }
        
