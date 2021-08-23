@@ -30,7 +30,7 @@ class TruPluginIonicCapacitorPlugin : Plugin() {
             try {
                 val truSdk = TruSDK.getInstance()
                 Log.d(TAG,"check is called")
-                val isOnCellular = url?.let { truSdk.check(it) }
+                val isOnCellular =  truSdk.check(url!!)
                 val ret =  JSObject();
                 ret.put("result", url);
                 call.resolve(ret);
