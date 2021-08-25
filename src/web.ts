@@ -9,12 +9,12 @@ export class TruPluginIonicCapacitorWeb
     console.log('ECHO', options);
     return options;
   }
-  async check(url: string): Promise<Result> {
-    console.log(url);
+  async check(options: { url: string }): Promise<Result> {
+    console.log(options.url);
     return { result: '' };
   }
-  async checkWithTrace(url: string): Promise<Result> {
-    console.log(url);
+  async checkWithTrace(options: { url: string }): Promise<Result> {
+    console.log(options.url);
     return { result: '' };
   }
   async isReachable(): Promise<Result> {

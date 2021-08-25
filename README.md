@@ -8,6 +8,20 @@ ionic build
 ionic cap sync
 ```
 
+For Android, update the following in `android/build.gradle` to:
+
+```gradle
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://gitlab.com/api/v4/projects/22035475/packages/maven"
+        }
+    }
+}
+```
+
 ## Compatibility
 
 - Minimum Android SDK: TruSDK requires a minimum API level of 21 (Android 5).

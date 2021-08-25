@@ -25,6 +25,12 @@ class TruPluginIonicCapacitorPlugin : Plugin() {
      fun check(call: PluginCall){
         val url = call.getString("url");
 
+        Log.d(TAG, call.data.toString())
+        
+        if(!call.data.has("url")){
+            call.reject("Check URL must be provided")
+            return
+        }
 
         CoroutineScope(context = Dispatchers.IO).launch {
             try {
