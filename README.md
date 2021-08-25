@@ -43,11 +43,11 @@ dependencies {
 ```tsx
 import { TruPluginIonicCapacitor } from '@tru_id/tru-plugin-ionic-capacitor';
 
-// Make a GET request using the cellular connection to the tru.ID check URL
-const checkDetails = await TruPluginIonicCapacitor.check(check_url);
-
 // Test if the device mobile network is currently supported
 const reachabilityDetails = await TruPluginIonicCapacitor.isReachable();
+
+// Make a GET request using the cellular connection to the tru.ID check URL
+const checkDetails = await TruPluginIonicCapacitor.check({ url: check_url });
 
 console.log('Check results', checkDetails.result);
 
