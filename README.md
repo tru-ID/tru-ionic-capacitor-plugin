@@ -22,6 +22,15 @@ allprojects {
 }
 ```
 
+Update the following in `android/app/build.gradle` to:
+
+```gradle
+dependencies {
+      implementation "com.squareup.okhttp3:okhttp:4.9.0"
+      implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2"
+}
+```
+
 ## Compatibility
 
 - Minimum Android SDK: TruSDK requires a minimum API level of 21 (Android 5).
