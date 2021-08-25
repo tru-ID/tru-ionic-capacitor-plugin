@@ -18,10 +18,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glamboyosa/tru-ionic-capacitor-plugin.git"
+    "url": "git+https://github.com/tru-ID/tru-ionic-capacitor-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/glamboyosa/tru-ionic-capacitor-plugin/issues"
+    "url": "https://github.com/tru-ID/tru-ionic-capacitor-plugin/issues"
   },
   "keywords": [
     "capacitor",
@@ -75,5 +75,6 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "homepage": "https://github.com/tru-ID/tru-ionic-capacitor-plugin#readme"
 }
