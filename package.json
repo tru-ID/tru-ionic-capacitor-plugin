@@ -1,6 +1,6 @@
 {
   "name": "@tru_id/tru-plugin-ionic-capacitor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "tru.ID Ionic & Capacitor plugin that enables an HTTP request to be made over cellular even when on WiFi.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -12,7 +12,7 @@
     "dist/",
     "ios/Plugin/",
     "ios/Podfile",
-    "TruIdTruPluginIonicCapacitor.podspec"
+    "TruPluginIonicCapacitor.podspec"
   ],
   "author": "tru.ID <community@tru.id> (https://github.com/tru-ID)",
   "license": "MIT",
