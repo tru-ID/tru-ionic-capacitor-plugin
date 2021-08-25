@@ -1,6 +1,6 @@
 {
   "name": "@tru_id/tru-plugin-ionic-capacitor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tru.ID Ionic & Capacitor plugin that enables an HTTP request to be made over cellular even when on WiFi.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
