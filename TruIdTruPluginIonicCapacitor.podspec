@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target  = '12.0'
   s.dependency 'Capacitor'
   s.dependency 'tru-sdk-ios', '~> 0.2.6'
-  s.swift_version = '5.1'
+  s.swift_version = '5.3'
 end
