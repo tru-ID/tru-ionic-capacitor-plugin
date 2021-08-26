@@ -31,6 +31,27 @@ dependencies {
 }
 ```
 
+Add the plugin to your app's `MainActivity` `onCreate` method:
+
+```java
+import com.trupluginioniccapacitor.TruPluginIonicCapacitorPlugin;
+
+@Override
+public void onCreate(Bundle savedInstance){
+    super.onCreate(savedInstance);
+    registerPlugin(TruPluginIonicCapacitorPlugin.class);
+}
+```
+
+```kotlin
+import com.trupluginioniccapacitor.TruPluginIonicCapacitorPlugin
+
+ public override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        registerPlugin(TruPluginIonicCapacitorPlugin::class.java)
+    }
+```
+
 ## Compatibility
 
 - Minimum Android SDK: TruSDK requires a minimum API level of 21 (Android 5).
