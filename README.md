@@ -57,7 +57,7 @@ import com.trupluginioniccapacitor.TruPluginIonicCapacitorPlugin
 - Minimum Android SDK: TruSDK requires a minimum API level of 21 (Android 5).
 - Compile Android SDK: TruSDK requires you to compile against API 30 (Android 11 or later).
 - Minimun deployment target for iOS is iOS 12.
-- Minimum Swift version is 5.1.
+- Minimum Swift version is 5.3.
 
 ## Usage
 
